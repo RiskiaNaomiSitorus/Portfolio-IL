@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/css/main.807a67d5.css",
+    "main.js": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/main.897a026f.js",
+    "static/js/453.1407b060.chunk.js": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/453.1407b060.chunk.js",
+    "index.html": "/RiskiaNaomiSitorus/Portfolio-IL.git/index.html",
+    "main.807a67d5.css.map": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/css/main.807a67d5.css.map",
+    "main.897a026f.js.map": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/main.897a026f.js.map",
+    "453.1407b060.chunk.js.map": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.807a67d5.css",
+    "static/js/main.897a026f.js"
+  ]
+}
