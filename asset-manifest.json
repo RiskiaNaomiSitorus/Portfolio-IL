@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/css/main.807a67d5.css",
-    "main.js": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/main.897a026f.js",
+    "main.css": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/css/main.98bbe56d.css",
+    "main.js": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/main.a7eaefd5.js",
     "static/js/453.1407b060.chunk.js": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/453.1407b060.chunk.js",
     "index.html": "/RiskiaNaomiSitorus/Portfolio-IL.git/index.html",
-    "main.807a67d5.css.map": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/css/main.807a67d5.css.map",
-    "main.897a026f.js.map": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/main.897a026f.js.map",
+    "main.98bbe56d.css.map": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/css/main.98bbe56d.css.map",
+    "main.a7eaefd5.js.map": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/main.a7eaefd5.js.map",
     "453.1407b060.chunk.js.map": "/RiskiaNaomiSitorus/Portfolio-IL.git/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.807a67d5.css",
-    "static/js/main.897a026f.js"
+    "static/css/main.98bbe56d.css",
+    "static/js/main.a7eaefd5.js"
   ]
 }
