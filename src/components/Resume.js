@@ -68,12 +68,12 @@ const Resume = () => {
             {/* Certificates Section */}
             <h3 className="resume-section-title">Certificates</h3>
             <div className="certificates-container">
-            <img src="/assets/sertif1.jpg" alt="Certificate for Achievement 3" className="certificate-image" />
-            <img src="/assets/sertif2.jpg" alt="Certificate for Achievement 2" className="certificate-image" />
-            <img src="/assets/sertif3.jpg" alt="Certificate for Achievement 3" className="certificate-image" />
-            <img src="/assets/sertif1.jpg" alt="Certificate for Achievement 3" className="certificate-image" />
-            <img src="/assets/sertif1.jpg" alt="Certificate for Achievement 3" className="certificate-image" />
-            <img src="/assets/sertif1.jpg" alt="Certificate for Achievement 3" className="certificate-image" />
+            <img src={`${process.env.PUBLIC_URL}/assets/sertif1.jpg`} alt="Certificate 1" className="certificate-image" />
+            <img src={`${process.env.PUBLIC_URL}/assets/sertif2.jpg`} alt="Certificate 2" className="certificate-image" />
+            <img src={`${process.env.PUBLIC_URL}/assets/sertif3.jpg`} alt="Certificate 3" className="certificate-image" />
+            <img src={`${process.env.PUBLIC_URL}/assets/sertif1.jpg`} alt="Certificate 1" className="certificate-image" />
+            <img src={`${process.env.PUBLIC_URL}/assets/sertif2.jpg`} alt="Certificate 2" className="certificate-image" />
+            <img src={`${process.env.PUBLIC_URL}/assets/sertif3.jpg`} alt="Certificate 3" className="certificate-image" />
         </div>
 
         </section>

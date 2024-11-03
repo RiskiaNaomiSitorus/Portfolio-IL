@@ -21,14 +21,14 @@
 
 .resume-container {
   display: flex;
-  justify-content: space-between; /* Aligns columns to left and right edges */
+  justify-content: space-between;
   gap: 50px;
   flex-wrap: wrap;
 }
 
 .resume-column {
   flex: 1;
-  max-width: 45%; /* Limits column width to keep it from stretching too much */
+  max-width: 45%;
 }
 
 .resume-section-title {
@@ -94,27 +94,27 @@ ul li {
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
   .resume-container {
-      flex-direction: column; /* Stacks columns on smaller screens */
+    flex-direction: column;
   }
   
   .resume-column {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
+/* Certificates Section */
 .certificates-container {
-  display: flex;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  padding: 10px 0;  /* Adds some padding */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grid layout for responsiveness */
+  gap: 15px;
+  margin-top: 20px;
+  padding: 10px 0;
 }
 
 .certificate-image {
-  width: 100%;           /* Membuat gambar berskala penuh sesuai wadahnya */
-  max-width: 200px;       /* Membatasi lebar maksimal gambar */
-  height: auto;           /* Menjaga rasio aspek gambar */
-  margin: 10px;           /* Spasi di sekitar gambar */
-  border-radius: 8px;     /* Menambah sudut bulat */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Menambah efek bayangan */
+  width: 100%;          /* Scale image to container width */
+  max-width: 200px;      /* Maximum width for larger screens */
+  height: auto;          /* Maintain aspect ratio */
+  border-radius: 8px;    /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
-
-

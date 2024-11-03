@@ -1,82 +1,110 @@
-/* src/components/Home.css */
+/* Main container styling remains the same */
 .home {
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center items vertically */
-    flex-direction: column; /* Arrange items in a column */
-    padding: 80px 20px; /* Added top padding to create space below navbar */
-    background-color: #e0f7fa; /* Aesthetic background color */
-    min-height: calc(100vh - 80px); /* Full height minus navbar height */
-    text-align: center; /* Center align text */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 20px;
+    background-color: #e0f7fa;
+    min-height: calc(100vh - 80px);
+    text-align: center;
 }
 
+/* Profile container with faster floating animation */
 .profile-container {
-    background: rgba(180, 200, 228, 0.9); /* Semi-transparent background for content */
-    padding: 40px; /* Padding inside the container */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
-    max-width: 800px; /* Increased max width for content */
-    width: 100%; /* Full width for responsiveness */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
-    margin: 20px 0; /* Add margin for vertical spacing */
+    background: rgba(180, 200, 228, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    margin: 20px 0;
+    animation: float 3s ease-in-out infinite; /* Floating animation */
 }
 
-.profile-container:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
+/* Profile picture with faster sway effect */
 .profile-picture {
-    width: 180px; /* Increased size for profile picture */
-    height: 180px; /* Increased height for profile picture */
-    border-radius: 50%; /* Circular profile picture */
-    object-fit: cover; /* Ensure the image fits within the dimensions */
-    border: 5px solid #00796b; /* Thicker border for the image */
-    margin-bottom: 20px; /* Space below the image */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00796b;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    animation: sway 2s ease-in-out infinite; /* Swaying animation */
 }
 
 .profile-picture:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Text animations */
+h1, h2, .text-content p {
+    opacity: 0;
+    animation: floatText 3s ease-in-out infinite, fadeInSlide 1s ease forwards;
 }
 
 h1 {
-    font-size: 2.5em; /* Title text size */
-    margin: 15px 0; /* Adjusted margin above and below */
-    color: #005b96; /* Match the navbar color */
-    animation: fadeIn 1s ease, slideIn 1s ease; /* Fade-in and slide-in animation */
+    font-size: 2.5em;
+    margin: 15px 0;
+    color: #005b96;
+    animation-delay: 0.5s; /* Delay to start animation */
 }
 
 h2 {
-    font-size: 1.5em; /* Subtitle text size */
-    margin: 10px 0; /* Adjusted margin above and below */
-    color: #004d40; /* Subtitle text color */
-    animation: fadeIn 1s ease 0.5s, slideIn 1s ease 0.5s; /* Fade-in and slide-in animation with delay */
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #004d40;
+    animation-delay: 0.7s; /* Delay to start animation */
 }
 
 .text-content p {
-    font-size: 1.2em; /* Paragraph text size */
-    line-height: 1.6; /* Line height for readability */
-    color: #333; /* Paragraph text color */
-    margin: 15px 0; /* Added margin for spacing above and below */
-    animation: fadeIn 1s ease 1s, slideIn 1s ease 1s; /* Fade-in and slide-in animation with longer delay */
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin: 15px 0;
+    animation-delay: 0.9s; /* Delay to start animation */
 }
 
-/* Keyframes for fade-in effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0; /* Start transparent */
+/* Keyframes for floating effect on text */
+@keyframes floatText {
+    0%, 100% {
+        transform: translateY(0); /* Start and end in original position */
     }
-    to {
-        opacity: 1; /* End fully visible */
+    50% {
+        transform: translateY(-5px); /* Move up slightly */
     }
 }
 
-/* Keyframes for slide-in effect */
-@keyframes slideIn {
-    from {
-        transform: translateY(20px); /* Start from below */
+/* Keyframes for continuous floating effect */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Start and end in original position */
     }
-    to {
-        transform: translateY(0); /* End in original position */
+    50% {
+        transform: translateY(-10px); /* Float up */
+    }
+}
+
+/* Keyframes for sway effect on profile picture */
+@keyframes sway {
+    0%, 100% {
+        transform: rotate(0deg); /* Start and end without rotation */
+    }
+    50% {
+        transform: rotate(3deg); /* Sway to one side */
+    }
+}
+
+/* Keyframes for fade-in and slide effect on text */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

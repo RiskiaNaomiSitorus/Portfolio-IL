@@ -1,90 +1,102 @@
-/* src/components/About.css */
 .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbeff5; /* Light blue background for the About section */
+  padding: 40px 0; 
+  min-height: 100vh;
+}
+
+.about-container {
+  background: rgba(180, 200, 228, 0.9); /* Soft white background for main container */
   padding: 30px;
-  background-color: #f0f4f7;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: auto;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 90%;
+  margin: 20px auto;
+  color: #004a63;
 }
 
-.about h2 {
+.about h2, .about h3 {
   text-align: center;
-  color: #005b96;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.about h3 {
-  margin-top: 30px;
-  color: #005b96;
-  font-size: 1.8em;
-  text-align: center;
+  color: #00796b;
 }
 
 .about p {
   text-align: justify;
-  line-height: 1.6;
-  color: #333;
+  line-height: 1.7;
+  color: #334e68;
   font-size: 1.1em;
   margin-bottom: 20px;
 }
 
-/* Contact Info styling */
+/* Contact Info Container with Different Background */
 .contact-info {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #50ac99; /* Light greenish background for contrast */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-column {
   flex: 1;
+  max-width: 45%;
+  text-align: left;
 }
 
-.about ul {
+.contact-column ul {
   list-style-type: none;
   padding: 0;
 }
 
-.about li {
+.contact-column li {
   margin-bottom: 10px;
-  color: #005b96;
+  color: #00796b;
   font-weight: 500;
 }
 
-/* Skills section styling */
+/* Skills Section */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .skill {
-  background-color: #b4c8e4;
-  color: #005b96;
+  background-color: #ade1d5;
+  color: #004d40;
   padding: 10px 15px;
   border-radius: 20px;
   font-size: 1em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 
 .skill:hover {
   transform: scale(1.1);
-  background-color: #96b7d4;
-  color: #004d73;
+  background-color: #96d2c7;
+  color: #003f35;
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .contact-info {
-      flex-direction: column;
-      gap: 0;
+    flex-direction: column;
+    align-items: center;
   }
   .contact-column {
-      margin-bottom: 10px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
