@@ -1,0 +1,90 @@
+/* src/components/About.css */
+.about {
+  padding: 30px;
+  background-color: #f0f4f7;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  text-align: center;
+  color: #005b96;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about h3 {
+  margin-top: 30px;
+  color: #005b96;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.about p {
+  text-align: justify;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Contact Info styling */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.contact-column {
+  flex: 1;
+}
+
+.about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about li {
+  margin-bottom: 10px;
+  color: #005b96;
+  font-weight: 500;
+}
+
+/* Skills section styling */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill {
+  background-color: #b4c8e4;
+  color: #005b96;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  background-color: #96b7d4;
+  color: #004d73;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .contact-info {
+      flex-direction: column;
+      gap: 0;
+  }
+  .contact-column {
+      margin-bottom: 10px;
+  }
+}

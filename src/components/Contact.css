@@ -1,0 +1,143 @@
+/* Styling umum untuk bagian kontak */
+.contact {
+  padding: 40px;
+  text-align: center;
+  background-color: #f9f9f9; /* Warna latar belakang */
+}
+
+.contact h2 {
+  font-size: 28px; /* Ukuran font untuk judul */
+  margin-bottom: 10px; /* Jarak bawah judul */
+  color: #333; /* Warna teks judul */
+}
+
+.contact p {
+  font-size: 16px; /* Ukuran font untuk deskripsi */
+  color: #666; /* Warna teks deskripsi */
+  max-width: 600px; /* Lebar maksimum untuk teks */
+  margin: 0 auto 30px; /* Margin untuk pengaturan jarak */
+}
+
+/* Kontainer untuk info dan form */
+.contact-container {
+  display: flex; /* Menggunakan Flexbox untuk layout */
+  justify-content: space-around; /* Menyebar konten secara merata */
+  flex-wrap: wrap; /* Membungkus elemen jika diperlukan */
+  gap: 30px; /* Jarak antara elemen */
+  margin-top: 20px; /* Margin atas untuk kontainer */
+}
+
+/* Styling untuk info kontak */
+.contact-info {
+  max-width: 400px; /* Lebar maksimum untuk info kontak */
+  padding: 20px; /* Padding di dalam kontainer */
+  background-color: #ffffff; /* Warna latar belakang untuk info kontak */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk kontainer */
+  border-radius: 8px; /* Sudut melengkung */
+  text-align: left; /* Teks rata kiri */
+}
+
+/* Item dalam info kontak */
+.info-item {
+  margin-bottom: 20px; /* Margin bawah untuk setiap item */
+}
+
+.contact-info h3 {
+  font-size: 18px; /* Ukuran font untuk sub-judul */
+  margin-bottom: 8px; /* Jarak bawah sub-judul */
+  color: #007bff; /* Warna untuk sub-judul */
+}
+
+.contact-info p {
+  font-size: 16px; /* Ukuran font untuk paragraf */
+  color: #333; /* Warna teks untuk paragraf */
+}
+
+/* Styling untuk peta Google */
+.contact-info iframe {
+  display: block; /* Mengatur iframe sebagai blok */
+  margin: 20px auto 0; /* Menempatkan peta di tengah */
+  width: 100%; /* Lebar peta sesuai dengan kontainer */
+  max-width: 350px; /* Lebar maksimum untuk peta */
+  height: 250px; /* Tinggi peta */
+  border-radius: 8px; /* Sudut melengkung untuk peta */
+  border: 1px solid #ddd; /* Border untuk peta */
+}
+
+/* Styling untuk form kontak */
+.contact-form {
+  max-width: 400px; /* Lebar maksimum untuk form */
+  padding: 20px; /* Padding di dalam form */
+  background-color: #ffffff; /* Warna latar belakang untuk form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk form */
+  border-radius: 8px; /* Sudut melengkung */
+}
+
+.contact-form form {
+  display: flex; /* Menggunakan Flexbox untuk layout form */
+  flex-direction: column; /* Mengatur kolom untuk elemen form */
+}
+
+/* Styling untuk input dan textarea dalam form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Lebar penuh untuk elemen */
+  padding: 12px; /* Padding di dalam input */
+  margin: 8px 0; /* Margin atas dan bawah */
+  border: 1px solid #ddd; /* Border untuk elemen */
+  border-radius: 5px; /* Sudut melengkung */
+  font-size: 16px; /* Ukuran font untuk input */
+  transition: border-color 0.3s; /* Transisi untuk border saat fokus */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff; /* Warna border saat elemen fokus */
+  outline: none; /* Menghilangkan outline default */
+}
+
+/* Styling khusus untuk textarea */
+.contact-form textarea {
+  resize: vertical; /* Membolehkan resize secara vertikal */
+  min-height: 100px; /* Tinggi minimum untuk textarea */
+}
+
+/* Styling untuk tombol submit */
+.contact-form button {
+  padding: 12px; /* Padding di dalam tombol */
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Sudut melengkung untuk tombol */
+  cursor: pointer; /* Menunjukkan kursor tangan */
+  font-size: 16px; /* Ukuran font untuk tombol */
+  transition: background-color 0.3s, transform 0.3s; /* Transisi untuk hover dan active */
+  align-self: flex-end; /* Menempatkan tombol ke kanan */
+  width: 50%; /* Lebar tombol */
+  margin-top: 10px; /* Margin atas untuk tombol */
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Warna saat hover */
+  transform: translateY(-2px); /* Efek gerakan saat hover */
+}
+
+.contact-form button:active {
+  transform: translateY(1px); /* Efek gerakan saat tombol ditekan */
+}
+
+/* Responsif untuk tampilan lebih kecil */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Mengatur kolom untuk elemen pada layar kecil */
+    align-items: center; /* Menyelaraskan elemen ke tengah */
+  }
+
+  .contact-info {
+    margin-right: 0; /* Menghilangkan margin kanan pada layar kecil */
+  }
+
+  .contact-form button {
+    width: 100%; /* Mengubah tombol menjadi full-width pada layar kecil */
+  }
+}

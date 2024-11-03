@@ -1,0 +1,82 @@
+/* src/components/Home.css */
+.home {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column */
+    padding: 80px 20px; /* Added top padding to create space below navbar */
+    background-color: #e0f7fa; /* Aesthetic background color */
+    min-height: calc(100vh - 80px); /* Full height minus navbar height */
+    text-align: center; /* Center align text */
+}
+
+.profile-container {
+    background: rgba(180, 200, 228, 0.9); /* Semi-transparent background for content */
+    padding: 40px; /* Padding inside the container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    max-width: 800px; /* Increased max width for content */
+    width: 100%; /* Full width for responsiveness */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    margin: 20px 0; /* Add margin for vertical spacing */
+}
+
+.profile-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.profile-picture {
+    width: 180px; /* Increased size for profile picture */
+    height: 180px; /* Increased height for profile picture */
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover; /* Ensure the image fits within the dimensions */
+    border: 5px solid #00796b; /* Thicker border for the image */
+    margin-bottom: 20px; /* Space below the image */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.profile-picture:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+h1 {
+    font-size: 2.5em; /* Title text size */
+    margin: 15px 0; /* Adjusted margin above and below */
+    color: #005b96; /* Match the navbar color */
+    animation: fadeIn 1s ease, slideIn 1s ease; /* Fade-in and slide-in animation */
+}
+
+h2 {
+    font-size: 1.5em; /* Subtitle text size */
+    margin: 10px 0; /* Adjusted margin above and below */
+    color: #004d40; /* Subtitle text color */
+    animation: fadeIn 1s ease 0.5s, slideIn 1s ease 0.5s; /* Fade-in and slide-in animation with delay */
+}
+
+.text-content p {
+    font-size: 1.2em; /* Paragraph text size */
+    line-height: 1.6; /* Line height for readability */
+    color: #333; /* Paragraph text color */
+    margin: 15px 0; /* Added margin for spacing above and below */
+    animation: fadeIn 1s ease 1s, slideIn 1s ease 1s; /* Fade-in and slide-in animation with longer delay */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+/* Keyframes for slide-in effect */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px); /* Start from below */
+    }
+    to {
+        transform: translateY(0); /* End in original position */
+    }
+}
