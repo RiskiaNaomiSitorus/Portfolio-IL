@@ -17,10 +17,7 @@ const Home = () => {
                     <h1>Welcome to My Portfolio</h1>
                     <p>
                         Hi, I’m <strong>Riskia Naomi Sitorus</strong>, an enthusiastic Informatics undergraduate at 
-                        Institut Teknologi Del. Driven by curiosity and creativity, I’m dedicated to exploring innovative 
-                        solutions through technology. From coding challenges to impactful projects, I’m constantly 
-                        pushing boundaries to turn complex ideas into practical solutions. Welcome to my portfolio—here, 
-                        you’ll find a blend of ambition, skill, and a passion for shaping the future of technology.
+                        Institut Teknologi Del. 
                     </p>
 
                 </div>

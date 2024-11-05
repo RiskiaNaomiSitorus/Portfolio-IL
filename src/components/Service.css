@@ -3,11 +3,12 @@
   background: linear-gradient(135deg, #f3f4f6, #ffffff);
   border-radius: 12px;
   text-align: center;
+  background: rgba(180, 200, 228, 0.9);
 }
 
 .services-title {
   font-size: 2em;
-  color: #333;
+  color: #125b44;
   margin-bottom: 30px;
 }
 
@@ -18,7 +19,7 @@
 }
 
 .service-item {
-  background-color: #fff;
+  background-color: #90c6ce;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);

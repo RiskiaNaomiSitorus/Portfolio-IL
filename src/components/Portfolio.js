@@ -9,7 +9,7 @@ const projects = [
         organization: 'Institut Teknologi DEL',
         role: '',
         date: 'Mar 2024',
-        description: 'In this project, I developed the application "DinoPedia," which functions as a dinosaur encyclopedia. This application includes a complete list of dinosaur families and their members and implements the use of RecycleView to organize the data display efficiently.',
+        description: 'This project is part of the practicum for the Mobile Application Development course. In this particular section, I developed "DinoPedia," an application that serves as an encyclopedia for dinosaurs. It includes a comprehensive list of dinosaur families and their respective members. To enhance the user experience and ensure efficient data display, I implemented RecyclerView for organizing the information effectively. This is just one component of the broader practicum tasks completed throughout the course.',
         imageUrl: '/assets/dinopedia.jpg',
     },
     {
@@ -59,7 +59,7 @@ const projects = [
         date: 'Aug 2023',
         description: 'This is a personal project created for the Web Application Development course. The goal was to design and develop a personal portfolio website to showcase my skills and projects. The site demonstrates my knowledge in front-end web development and UI/UX design principles.',
         link: 'https://portfolioriskia.vercel.app/',
-        imageUrl: '/assets/port.jpg', // Replace with a relevant image or screenshot if available
+        imageUrl: '/assets/port.jpg',
     },
 ];
 
@@ -68,6 +68,8 @@ const Portfolio = () => {
         <section id="portfolio" className="portfolio">
             <h2>Portfolio</h2>
             <p>A showcase of my latest work and projects.</p>
+            {/* Test image to verify image loading */}
+            <img src="/assets/dinopedia.jpg" alt="Test Image" />
             <div className="project-grid">
                 {projects.map((project) => (
                     <div key={project.id} className="project-card">
@@ -78,7 +80,6 @@ const Portfolio = () => {
                         </p>
                         <p className="project-date">{project.date}</p>
                         <p className="project-description">{project.description}</p>
-                        {/* Render link if available */}
                         {project.link && (
                             <a 
                                 href={project.link} 

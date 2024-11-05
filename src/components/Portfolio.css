@@ -3,6 +3,7 @@
 .portfolio {
   padding: 20px;
   text-align: center;
+  background: rgba(180, 200, 228, 0.9);
 }
 
 .project-grid {
@@ -22,9 +23,10 @@
 }
 
 .project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: 100%; /* Adjust this value as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional styling */
+  display: block; /* Ensure it is displayed as a block */
 }
 
 .project-title {
